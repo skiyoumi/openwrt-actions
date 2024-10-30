@@ -88,7 +88,7 @@ jobs:
         find dl -size -1024c -exec rm -f {} \;
     - name: Setup Debug Session
       uses: mxschmitt/action-tmate@v3
-      timeout-minutes: 15
+      timeout-minutes: 120
       
     - name: Compile the firmware
       id: compile
